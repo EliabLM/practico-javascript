@@ -9,9 +9,31 @@
     <title>JavaScript Práctico</title>
 </head>
 <body>
-    
+
+    <header>
+        <h1>Figuras Geométricas</h1>
+        <nav>
+            menu del proyecto
+        </nav>
+    </header>
+
+    <section>
+        <h2>Calcula el área y perimetro de un cuadrado</h2>
+        <form action="">
+            <label for="inputCuadrado">
+                Escribe cuanto mide cada lado de tu cuadrado
+            </label>
+            <input id="inputCuadrado" type="number">
+            <button type="button" onclick="calcularPerimetroCuadrado()">
+                Calcular el perimetro
+            </button>
+            <button type="button" onclick="calcularAreaCuadrado()">
+                Calcular el área
+            </button>
+        </form>
+    </section>
 
     <!-- Script -->
-    <script src="./index.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
