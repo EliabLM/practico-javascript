@@ -20,13 +20,13 @@ function calcularMediana(lista) {
 
 	const mitadLista = parseInt(lista.length / 2);
 
-	if (esPar(lista2.length)) {
+	if (esPar(lista.length)) {
 		const elemento1 = lista[mitadLista - 1];
 		const elemento2 = lista[mitadLista];
 
 		return calcularMediaAritmetica([elemento1, elemento2]);
 	} else {
-		return lista[mitadLista2];
+		return lista[mitadLista];
 	}
 }
 
