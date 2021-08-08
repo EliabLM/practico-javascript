@@ -74,8 +74,8 @@ header {
 }
 
 .logo img {
-	width: 120px;
-	height: 60px;
+	/* outline: 1px solid; */
+	width: 130px;
 }
 
 .nav__links {
@@ -94,10 +94,6 @@ header {
 
 .nav__links li a {
 	transition: all 0.3s ease 0s;
-}
-
-.nav__links li a:hover {
-	color: darkmagenta;
 }
 
 .cta button {
