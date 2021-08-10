@@ -14,10 +14,10 @@
         <a class="logo" href="../index.html"><img src="../images/logo_transparent.svg" alt="Logo"></a>
         <nav>
             <ul class="nav__links">
-                <li><a href="#"></a>Figuras Geométricas</li>
-                <li><a href="#"></a>Descuentos</li>
-                <li><a href="#"></a>Promedios</li>
-                <li><a href="#"></a>Análisis Salarial</li>
+                <li><a href="#">Figuras Geométricas</a></li>
+                <li><a href="#">Descuentos</a></li>
+                <li><a href="#">Promedios</a></li>
+                <li><a href="#">Análisis Salarial</a></li>
             </ul>
         </nav>
         <a class="cta" href="#"><button>Contact</button></a>
@@ -27,21 +27,56 @@
         <h1>Figuras Geométricas</h1>
     </section>
 
-    <section>
-        <h2>Calcula el área y perimetro de un cuadrado</h2>
-        <form action="">
-            <label for="inputCuadrado">
-                Escribe cuanto mide cada lado de tu cuadrado
-            </label>
-            <input id="inputCuadrado" type="number">
-            <button type="button" onclick="calcularPerimetroCuadrado()">
-                Calcular el perimetro
-            </button>
-            <button type="button" onclick="calcularAreaCuadrado()">
-                Calcular el área
-            </button>
-        </form>
-    </section>
+    <main>
+        
+        <!-- Cuadrado -->
+        <section class="cuadrado card">
+            <h2>Cuadrado</h2>
+            <p>Calcula el área y perímetro de un cuadrado</p>
+            <form class="cuadrado-form" action="">
+                <label for="inputCuadrado">
+                    Longitud de cada lado en cm.
+                </label>
+                <input placeholder="0" id="inputCuadrado" type="number">
+                <div class="salida">
+                    <h3>Perímetro</h3>
+                    <h4>0.00</h4>
+                </div>
+                <div class="salida">
+                    <h3>Área</h3>
+                    <h4>0.00</h4>
+                </div>
+                <div class="btns">
+                    <button type="button" onclick="calcularPerimetroCuadrado()">
+                         Calcular perímetro
+                    </button>
+                    <button type="button" onclick="calcularAreaCuadrado()">
+                        Calcular área
+                    </button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Triangulo -->
+        <section class="triangulo card">
+            <h2>Calcula el triangulo</h2>
+        </section>
+
+        <!-- Triangulo isoseles -->
+        <section class="triangulo-isoseles card">
+            <h2>Calcula el triangulo isoseles</h2>
+        </section>
+
+        <!-- Circulo -->
+        <section class="circulo card">
+            <h2>Calcula el circulo</h2>
+        </section>
+
+    </main>
+
+    <footer>
+        Project by <a href="https://platzi.com" target="_blank">PLATZI</a>. Coded by <a href="https://github.com/EliabLM">Eliab López</a>
+    </footer>
 
     <!-- Script -->
     <script src="./figuras.js"></script>
