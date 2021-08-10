@@ -34,19 +34,21 @@ function areaCirculo(radio) {
 	return radio ** 2 * PI;
 }
 
-// Funciones OnClick
+// ===== Funciones OnClick =====
 function calcularPerimetroCuadrado() {
+	const valorPerimetro = document.querySelector('.valorPerimetro');
 	const input = document.getElementById('inputCuadrado');
 	const value = input.value;
 
 	const perimetro = perimetroCuadrado(value);
-	alert(perimetro);
+	valorPerimetro.textContent = `${perimetro}`;
 }
 
 function calcularAreaCuadrado() {
+	const valorArea = document.querySelector('.valorArea');
 	const input = document.getElementById('inputCuadrado');
 	const value = input.value;
 
 	const area = areaCuadrado(value);
-	alert(area);
+	valorArea.textContent = `${area}`;
 }
