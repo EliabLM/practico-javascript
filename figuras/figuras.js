@@ -35,6 +35,7 @@ function areaCirculo(radio) {
 }
 
 // ===== Funciones OnClick =====
+// ===== Cuadrado =====
 function calcularPerimetroCuadrado() {
 	const valorPerimetro = document.querySelector('.valorPerimetro');
 	const input = document.getElementById('inputCuadrado');
@@ -52,3 +53,5 @@ function calcularAreaCuadrado() {
 	const area = areaCuadrado(value);
 	valorArea.textContent = `${area}`;
 }
+
+// ===== Triangulo =====

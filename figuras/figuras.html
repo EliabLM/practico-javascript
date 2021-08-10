@@ -59,7 +59,48 @@
 
         <!-- Triangulo -->
         <section class="triangulo card">
-            <h2>Calcula el triangulo</h2>
+            <h2>Triangulo</h2>
+            <p>Calcula el área y perímetro de un triangulo</p>
+            <form action="" class="triangulo-form">
+                <div class="inputLados">
+                    <!-- lado 1 -->
+                    <label for="inputLado1">
+                        Longitud lado 1
+                    </label>
+                    <input class="inputTriangulo" type="number" id="inputLado1" placeholder="0">
+
+                    <!-- lado 2 -->
+                    <label for="inputLado2">
+                        Longitud lado 2
+                    </label>
+                    <input class="inputTriangulo" type="number" id="inputLado2" placeholder="0">
+
+                    <!-- base -->
+                    <label for="inputBase">
+                        Longitud base
+                    </label>
+                    <input class="inputTriangulo" type="number" id="inputBase" placeholder="0">
+
+                </div>
+
+                <div class="salida">
+                    <h3>Perímetro</h3>
+                    <h4 class="valorPerimetroTriangulo">0.0</h4>
+                </div>
+                <div class="salida">
+                    <h3>Área</h3>
+                    <h4 class="valorAreaTriangulo">0.0</h4>
+                </div>
+
+                <div class="btns">
+                    <button type="button" onclick="calcularPerimetroTriangulo()">
+                        Calcular perímetro
+                   </button>
+                   <button type="button" onclick="calcularAreaTriangulo()">
+                       Calcular área
+                   </button>
+                </div>
+            </form>
         </section>
 
         <!-- Triangulo isoseles -->
