@@ -55,3 +55,25 @@ function calcularAreaCuadrado() {
 }
 
 // ===== Triangulo =====
+function calcularPerimetroTriangulo() {
+	const valorPerimetro = document.querySelector('.valorPerimetroTriangulo');
+	const inputLado1 = document.getElementById('inputLado1').value;
+	const inputLado2 = document.getElementById('inputLado2').value;
+	const inputBase = document.getElementById('inputBase').value;
+
+	const perimetro = perimetroTriangulo(
+		parseInt(inputLado1),
+		parseInt(inputLado2),
+		parseInt(inputBase)
+	);
+	valorPerimetro.textContent = perimetro;
+}
+
+function calcularAreaTriangulo() {
+	const valorArea = document.querySelector('.valorAreaTriangulo');
+	const inputAltura = document.getElementById('inputAltura').value;
+	const inputBase = document.getElementById('inputBase').value;
+
+	const area = areaTriangulo(parseInt(inputAltura), parseInt(inputBase));
+	valorArea.textContent = area;
+}
