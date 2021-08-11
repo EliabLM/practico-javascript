@@ -111,3 +111,20 @@ function calcularAlturaTrianguloIsosceles() {
 
 	valorAltura.textContent = altura.toFixed(2);
 }
+
+// ===== Circulo =====
+function calcularCircunferenciaCirculo() {
+	const valorCircunferencia = document.querySelector('.valorCircunferencia');
+	const inputRadio = document.getElementById('inputRadio').value;
+
+	const circunferencia = perimetroCirculo(parseInt(inputRadio));
+	valorCircunferencia.textContent = circunferencia.toFixed(3);
+}
+
+function calcularAreaCirculo() {
+	const valorAreaCirculo = document.querySelector('.valorAreaCirculo');
+	const inputRadio = document.getElementById('inputRadio').value;
+
+	const area = areaCirculo(parseInt(inputRadio));
+	valorAreaCirculo.textContent = area.toFixed(3);
+}
