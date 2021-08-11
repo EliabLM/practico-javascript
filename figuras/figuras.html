@@ -110,8 +110,46 @@
         </section>
 
         <!-- Triangulo isoseles -->
-        <section class="triangulo-isoseles card">
-            <h2>Calcula el triangulo isoseles</h2>
+        <section class="triangulo-isosceles card">
+            <h2>Triangulo Isósceles</h2>
+            <p>Calcula la altura de un triangulo isósceles</p>
+            <form action="" class="triangulo-form">
+                <div class="inputLados">
+                    <!-- lado 1 -->
+                    <label for="inputLadoA">
+                        Longitud lado A
+                    </label>
+                    <input class="inputTriangulo isosceles" type="number" id="inputLadoA" placeholder="0">
+
+                    <!-- lado 2 -->
+                    <label for="inputLadoB">
+                        Longitud lado B
+                    </label>
+                    <input class="inputTriangulo isosceles" type="number" id="inputLadoB" placeholder="0">
+
+                    <!-- base -->
+                    <label for="inputBaseIsosceles">
+                        Longitud base
+                    </label>
+                    <input class="inputTriangulo isosceles" type="number" id="inputBaseIsosceles" placeholder="0">
+
+                </div>
+
+                <div class="salida">
+                    <h3>Altura</h3>
+                    <h4 class="valorPerimetroTrianguloIsosceles">0.0</h4>
+                </div>
+                
+
+                <div class="btns">
+                    <div class="warning show">
+                        Los lados a y b<br> no son iguales
+                    </div>
+                    <button class="calc-altura" type="button" onclick="calcularAlturaTrianguloIsosceles()">
+                        Calcular altura
+                   </button>
+                </div>
+            </form>
         </section>
 
         <!-- Circulo -->

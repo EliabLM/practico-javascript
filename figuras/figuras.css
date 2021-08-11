@@ -277,6 +277,32 @@ main {
 	border: 2px solid var(--very-dark-blue);
 }
 
+/* ===== Triangulo isosceles ===== */
+.triangulo-isosceles {
+	border-top: 2px solid var(--cyan);
+	border-bottom: 2px solid var(--cyan);
+}
+
+.isosceles:focus {
+	outline: none;
+	border: 2px solid var(--cyan);
+}
+
+.calc-altura {
+	margin-left: 50px;
+	/* align-self: flex-end; */
+}
+
+.warning {
+	margin-right: auto;
+	font-weight: bold;
+	color: var(--orange);
+}
+
+.show {
+	display: none;
+}
+
 /* ===== Footer ===== */
 footer {
 	/* outline: 1px solid magenta; */
