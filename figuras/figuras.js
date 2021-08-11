@@ -18,6 +18,22 @@ function areaTriangulo(altura, base) {
 	return (altura * base) / 2;
 }
 
+// Triangulo isosceles
+function alturaTrianguloIsosceles(ladoA, ladoB, base) {
+	// instrucciones
+	const advertencia = document.querySelector('.warning');
+
+	if (ladoA != ladoB) {
+		advertencia.classList.remove('show');
+	} else {
+		advertencia.classList.add('show');
+
+		const catetoAdjacente = base / 2;
+		const hipotenusa = ladoA;
+		return Math.sqrt(hipotenusa ** 2 - catetoAdjacente ** 2);
+	}
+}
+
 // Circulo
 const PI = Math.PI;
 
@@ -76,4 +92,22 @@ function calcularAreaTriangulo() {
 
 	const area = areaTriangulo(parseInt(inputAltura), parseInt(inputBase));
 	valorArea.textContent = area;
+}
+
+// ===== Triangulo isosceles =====
+function calcularAlturaTrianguloIsosceles() {
+	// instrucciones
+	const valorAltura = document.querySelector('.valorAlturaTrianguloIsosceles');
+	const inputLadoA = document.getElementById('inputLadoA').value;
+	const inputLadoB = document.getElementById('inputLadoB').value;
+	const inputBaseIsosceles =
+		document.getElementById('inputBaseIsosceles').value;
+
+	const altura = alturaTrianguloIsosceles(
+		parseInt(inputLadoA),
+		parseInt(inputLadoB),
+		parseInt(inputBaseIsosceles)
+	);
+
+	valorAltura.textContent = altura.toFixed(2);
 }
