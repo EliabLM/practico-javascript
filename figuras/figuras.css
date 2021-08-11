@@ -167,12 +167,12 @@ main {
 }
 
 /* ===== Cuadrado ===== */
-.cuadrado {
+/* .cuadrado {
 	border-top: 2px solid var(--cyan);
 	border-bottom: 2px solid var(--cyan);
-}
+} */
 
-#inputCuadrado {
+.oneInput {
 	width: 100%;
 	height: 38px;
 	border: none;
@@ -187,11 +187,11 @@ main {
 	color: var(--very-dark-blue);
 }
 
-#inputCuadrado::placeholder {
+.oneInput::placeholder {
 	color: var(--grayish-blue);
 }
 
-#inputCuadrado:focus {
+.oneInput:focus {
 	outline: none;
 	border: 2px solid var(--cyan);
 }
@@ -274,14 +274,14 @@ main {
 
 .inputTriangulo:focus {
 	outline: none;
-	border: 2px solid var(--very-dark-blue);
+	border: 2px solid var(--grayish-blue);
 }
 
 /* ===== Triangulo isosceles ===== */
-.triangulo-isosceles {
+/* .triangulo-isosceles {
 	border-top: 2px solid var(--cyan);
 	border-bottom: 2px solid var(--cyan);
-}
+} */
 
 .isosceles:focus {
 	outline: none;
@@ -301,6 +301,20 @@ main {
 
 .show {
 	display: none;
+}
+
+/* ===== Círculo ===== */
+.circulo {
+	background-color: var(--cyan);
+}
+
+.circulo p {
+	color: var(--very-light-gray);
+}
+
+#inputRadio:focus {
+	outline: none;
+	border: 2px solid var(--grayish-blue);
 }
 
 /* ===== Footer ===== */

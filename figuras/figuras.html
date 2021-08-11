@@ -37,7 +37,7 @@
                 <label for="inputCuadrado">
                     Longitud de cada lado.
                 </label>
-                <input placeholder="0" id="inputCuadrado" type="number">
+                <input class="oneInput" placeholder="0" id="inputCuadrado" type="number">
                 <div class="salida">
                     <h3>Perímetro</h3>
                     <h4 class="valorPerimetro">0.0</h4>
@@ -65,25 +65,25 @@
                 <div class="inputLados">
                     <!-- lado 1 -->
                     <label for="inputLado1">
-                        Longitud lado 1
+                        Longitud lado 1.
                     </label>
                     <input class="inputTriangulo" type="number" id="inputLado1" placeholder="0">
 
                     <!-- lado 2 -->
                     <label for="inputLado2">
-                        Longitud lado 2
+                        Longitud lado 2.
                     </label>
                     <input class="inputTriangulo" type="number" id="inputLado2" placeholder="0">
 
                     <!-- altura -->
                     <label for="inputAltura">
-                        Longitud altura
+                        Longitud altura.
                     </label>
                     <input class="inputTriangulo" type="number" id="inputAltura" placeholder="0">
 
                     <!-- base -->
                     <label for="inputBase">
-                        Longitud base
+                        Longitud base.
                     </label>
                     <input class="inputTriangulo" type="number" id="inputBase" placeholder="0">
 
@@ -117,19 +117,19 @@
                 <div class="inputLados">
                     <!-- lado 1 -->
                     <label for="inputLadoA">
-                        Longitud lado A
+                        Longitud lado A.
                     </label>
                     <input class="inputTriangulo isosceles" type="number" id="inputLadoA" placeholder="0">
 
                     <!-- lado 2 -->
                     <label for="inputLadoB">
-                        Longitud lado B
+                        Longitud lado B.
                     </label>
                     <input class="inputTriangulo isosceles" type="number" id="inputLadoB" placeholder="0">
 
                     <!-- base -->
                     <label for="inputBaseIsosceles">
-                        Longitud base
+                        Longitud base.
                     </label>
                     <input class="inputTriangulo isosceles" type="number" id="inputBaseIsosceles" placeholder="0">
 
@@ -154,7 +154,30 @@
 
         <!-- Circulo -->
         <section class="circulo card">
-            <h2>Calcula el circulo</h2>
+            <h2>Círculo</h2>
+            <p>Calcula la circunferencia y área de un círculo</p>
+            <form class="cuadrado-form" action="">
+                <label for="inputRadio">
+                    Radio.
+                </label>
+                <input class="oneInput" placeholder="0" id="inputRadio" type="number">
+                <div class="salida">
+                    <h3>Circunferencia</h3>
+                    <h4 class="valorPerimetro">0.0</h4>
+                </div>
+                <div class="salida">
+                    <h3>Área</h3>
+                    <h4 class="valorArea">0.0</h4>
+                </div>
+                <div class="btns">
+                    <button type="button" onclick="calcularCircunferenciaCirculo()">
+                         Calcular circunferencia
+                    </button>
+                    <button type="button" onclick="calcularAreaCirculo()">
+                        Calcular área
+                    </button>
+                </div>
+            </form>
         </section>
 
     </main>
