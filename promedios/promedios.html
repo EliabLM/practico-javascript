@@ -29,18 +29,19 @@
 
     <main>
         <h2>Ingrese lista de números</h2>
-        <input class="input" type="number" placeholder="Ejemplo: 1, 2, 3, 4, 5">
+        <p>Caracteres alfabéticos no serán tenidos en cuenta</p>
+        <input class="input" type="text" placeholder="Ejemplo: 1, 2, 3, 4, 5">
         <div class="btns">
             <div class="btn btn-media">
-                <button>Media</button>
+                <button onclick="calcularMediaOnClick()">Media</button>
                 <p class="result result-media"></p>
             </div>
             <div class="btn btn-mediana">
-                <button>Mediana</button>
+                <button onclick="calcularMedianaOnClick()">Mediana</button>
                 <p class="result result-mediana"></p>
             </div>
             <div class="btn btn-moda">
-                <button>Moda</button>
+                <button onclick="calcularModaOnClick()">Moda</button>
                 <p class="result result-moda"></p>
             </div>
         </div>

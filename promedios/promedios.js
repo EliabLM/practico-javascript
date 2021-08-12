@@ -57,3 +57,35 @@ function calcularModa(lista) {
 
 	return listaArray[listaArray.length - 1];
 }
+
+function limpiarDatos(input) {
+	return (arrayInput = input.value
+		.split(',')
+		.map((num) => {
+			return parseInt(num);
+		})
+		.filter(Boolean));
+}
+
+// Funciones OnClick
+const inputLista = document.querySelector('.input');
+const media = document.querySelector('.result-media');
+const mediana = document.querySelector('.result-mediana');
+const moda = document.querySelector('.result-moda');
+
+function calcularMediaOnClick() {
+	const arrayInputLista = limpiarDatos(inputLista);
+	const resultMedia = calcularMediaAritmetica(arrayInputLista);
+	media.textContent = `${resultMedia.toFixed(2)}`;
+}
+
+function calcularMedianaOnClick() {
+	const arrayInputLista = limpiarDatos(inputLista);
+	const resultMediana = calcularMediana(arrayInputLista);
+	mediana.textContent = resultMediana.toFixed(2);
+}
+function calcularModaOnClick() {
+	const arrayInputLista = limpiarDatos(inputLista);
+	const resultModa = calcularModa(arrayInputLista);
+	moda.textContent = resultModa[0];
+}
