@@ -17,8 +17,8 @@
             <ul class="nav__links">
                 <li><a href="../figuras/figuras.html">Figuras Geométricas</a></li>
                 <li><a href="./descuentos.html">Descuentos</a></li>
-                <li><a href="#">Promedios</a></li>
-                <li><a href="#">Análisis Salarial</a></li>
+                <li><a href="../promedios/promedios.html">Promedios</a></li>
+                <li><a href="../salarios/salarios.html">Análisis Salarial</a></li>
             </ul>
         </nav>
         <a class="cta" href="#"><button>Contact</button></a>
@@ -29,7 +29,7 @@
     </section>
 
     <main>
-        <h2>Calcula el precio a pagar de tus productos con descuento</h2>
+        <h2>Calcula el precio a pagar de tus productos con descuento.</h2>
         
         <form action="">
 
@@ -43,18 +43,24 @@
             </label>
             <input class="oneInput" placeholder="0" id="inputDiscount" type="number">
 
-            <button type="button" onclick="onClickButtonPriceDiscount()">
-                Calcular
-            </button>
-
-            <div class="salida">
-                <h3>Valor a pagar</h3>
-                <h4 class="valorAPagar">$0.00</h4>
+            <div class="btn-img">
+                
+                <div class="salida-left">
+                    <!-- <div class="salida">
+                        <h3>Valor a pagar</h3>
+                        <h4 class="valorAPagar">$0.00</h4>
+                    </div> -->
+                
+                    <button type="button" onclick="onClickButtonPriceDiscount()">
+                        Calcular
+                    </button>
+                    <p id="resultP">
+        
+                    </p>
+                </div>
+                <img src="../images/undraw_discount_d4bd.svg" alt="Discount">
             </div>
 
-            <p id="resultP">
-
-            </p>
         </form>
     </main>
 
