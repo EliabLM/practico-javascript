@@ -126,6 +126,7 @@ header button:hover {
 	text-transform: uppercase;
 	color: var(--very-dark-blue);
 }
+
 /* ===== Main ===== */
 main {
 	display: flex;
