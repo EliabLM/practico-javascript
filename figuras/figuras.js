@@ -28,7 +28,6 @@ function areaTriangulo(altura, base) {
 
 // Triangulo isosceles
 function alturaTrianguloIsosceles(ladoA, ladoB, base) {
-	// instrucciones
 	const advertencia = document.querySelector('.warning');
 
 	if (ladoA != ladoB) {
@@ -104,7 +103,6 @@ function calcularAreaTriangulo() {
 
 // ===== Triangulo isosceles =====
 function calcularAlturaTrianguloIsosceles() {
-	// instrucciones
 	const valorAltura = document.querySelector('.valorAlturaTrianguloIsosceles');
 	const inputLadoA = document.getElementById('inputLadoA').value;
 	const inputLadoB = document.getElementById('inputLadoB').value;
