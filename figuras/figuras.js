@@ -1,3 +1,11 @@
+// Mobile
+const navToggle = document.querySelector('.nav-toggle');
+const links = document.querySelector('.links');
+
+navToggle.addEventListener('click', function () {
+	links.classList.toggle('show-links');
+});
+
 // Cuadrado
 
 function perimetroCuadrado(lado) {
@@ -20,7 +28,6 @@ function areaTriangulo(altura, base) {
 
 // Triangulo isosceles
 function alturaTrianguloIsosceles(ladoA, ladoB, base) {
-	// instrucciones
 	const advertencia = document.querySelector('.warning');
 
 	if (ladoA != ladoB) {
@@ -96,7 +103,6 @@ function calcularAreaTriangulo() {
 
 // ===== Triangulo isosceles =====
 function calcularAlturaTrianguloIsosceles() {
-	// instrucciones
 	const valorAltura = document.querySelector('.valorAlturaTrianguloIsosceles');
 	const inputLadoA = document.getElementById('inputLadoA').value;
 	const inputLadoB = document.getElementById('inputLadoB').value;

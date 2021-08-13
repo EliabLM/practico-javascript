@@ -7,20 +7,29 @@
     <!-- Estilos -->
     <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./descuentos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
     <title>Porcentajes y Descuentos</title>
 </head>
 <body>
 
     <header>
-        <a class="logo" href="../index.html"><img src="../images/logo_transparent.svg" alt="Logo"></a>
-        <nav>
-            <ul class="nav__links">
-                <li><a href="../figuras/figuras.html">Figuras Geométricas</a></li>
-                <li><a href="./descuentos.html">Descuentos</a></li>
-                <li><a href="../promedios/promedios.html">Promedios</a></li>
-                <li><a href="../salarios/salarios.html">Análisis Salarial</a></li>
-            </ul>
-        </nav>
+        <!-- nav header -->
+        <div class="nav-header">
+            <a class="logo" href="../index.html"><img src="../images/logo_transparent.svg" alt="logo"></a>
+            <button class="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- links -->
+        <ul class="links show-links">
+            <li><a href="../figuras/figuras.html">Figuras Geométricas</a></li>
+            <li><a href="../descuentos/descuentos.html">Descuentos</a></li>
+            <li><a href="../promedios/promedios.html">Promedios</a></li>
+            <li><a href="../salarios/salarios.html">Análisis Salarial</a></li>
+        </ul>
+
+        <!-- contact -->
         <a class="cta" href="https://www.linkedin.com/in/eliablopez/"><button>Contact</button></a>
     </header>
     
@@ -46,10 +55,6 @@
             <div class="btn-img">
                 
                 <div class="salida-left">
-                    <!-- <div class="salida">
-                        <h3>Valor a pagar</h3>
-                        <h4 class="valorAPagar">$0.00</h4>
-                    </div> -->
                 
                     <button type="button" onclick="onClickButtonPriceDiscount()">
                         Calcular

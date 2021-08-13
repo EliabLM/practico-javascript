@@ -20,7 +20,7 @@ Talleres:
 1. Calculadora para figuras geométricas básicas.
 2. Calculadora para aplicar descuentos en tiendas.
 3. Media, mediana y moda de una lista de datos.
-4. Información salarial y capacidad de endeudamiento.
+4. Media, mediana y Top 10 de una lista de salarios.
 
 ### Links
 
